@@ -2,7 +2,7 @@
 
 # **CTF File Manipulation Toolkit**  
 
-
+![[logo.png.png]]
 
 **Description:**  
 This advanced Python script is designed for **CTF (Capture The Flag) players** and **security researchers** to manage, analyze, and clean directories efficiently. It provides:  
@@ -102,3 +102,5 @@ This tool is **ideal for CTFs** where you need to:
 Try it out in a **test directory first** before running it on important files! 🚀  
 
 --- 
+
+[^1]: 
