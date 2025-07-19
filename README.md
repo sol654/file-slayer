@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # **CTF File Manipulation Toolkit**  
 
@@ -99,4 +100,3 @@ This tool is **ideal for CTFs** where you need to:
 Try it out in a **test directory first** before running it on important files! 🚀  
 
 --- 
-
