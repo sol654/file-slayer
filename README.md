@@ -23,7 +23,7 @@ This advanced Python script is designed for **CTF (Capture The Flag) players** a
      ```sh
      sudo apt-get install libmagic1  # Debian/Ubuntu
      ```
-3. Save the script as **`fileremover.py`**.
+3. Save the script as **`fileslayer.py`**.
 
 ---
 
@@ -31,21 +31,21 @@ This advanced Python script is designed for **CTF (Capture The Flag) players** a
 
 ### **Basic Syntax**  
 ```sh
-python fileremover.py [OPTIONS]
+python fileslayer.py [OPTIONS]
 ```
 
 ### **ðŸ”¹ Common Commands**  
 
 | Command                                               | Description                                                       |
 | ----------------------------------------------------- | ----------------------------------------------------------------- |
-| `python fileremover.py`                               | Cleans the current directory (keeps script & backup folder)       |
-| `python fileremover.py -d /path/to/dir`               | Cleans a specific directory                                       |
-| `python fileremover.py -e file1 dir1`                 | Excludes `file1` and `dir1` from deletion                         |
-| `python fileremover.py -fp "*.tmp" "*.log"`           | Deletes only files matching these patterns                        |
-| `python fileremover.py -dp "temp_*"`                  | Deletes only folders matching the pattern                         |
-| `python fileremover.py --info target.txt`             | Shows metadata for `target.txt`                                   |
-| `python fileremover.py --info file.exe --hash sha256` | Computes SHA256 hash of `file.exe`                                |
-| `python fileremover.py -b -v -l log.txt`              | Enables **backup**, **verbose logs**, and saves logs to `log.txt` |
+| `python fileslayer.py`                               | Cleans the current directory (keeps script & backup folder)       |
+| `python fileslayer.py -d /path/to/dir`               | Cleans a specific directory                                       |
+| `python fileslayer.py -e file1 dir1`                 | Excludes `file1` and `dir1` from deletion                         |
+| `python fileslayer.py -fp "*.tmp" "*.log"`           | Deletes only files matching these patterns                        |
+| `python fileslayer.py -dp "temp_*"`                  | Deletes only folders matching the pattern                         |
+| `python fileslayer.py --info target.txt`             | Shows metadata for `target.txt`                                   |
+| `python fileslayer.py --info file.exe --hash sha256` | Computes SHA256 hash of `file.exe`                                |
+| `python fileslayer.py -b -v -l log.txt`              | Enables **backup**, **verbose logs**, and saves logs to `log.txt` |
 
 ---
 
@@ -53,27 +53,27 @@ python fileremover.py [OPTIONS]
 
 ### **1. Delete all files except `flag.txt` and `secret/`**  
 ```sh
-python fileremover.py -e flag.txt secret
+python fileslayer.py -e flag.txt secret
 ```
 
 ### **2. Delete only `.tmp` and `.bak` files**  
 ```sh
-python fileremover.py -fp "*.tmp" "*.bak"
+python fileslayer.py -fp "*.tmp" "*.bak"
 ```
 
 ### **3. Get file info (size, hash, timestamps, MIME type)**  
 ```sh
-python fileremover.py --info suspicious_file
+python fileslayer.py --info suspicious_file
 ```
 
 ### **4. Compute SHA1 hash of a file (useful for CTF checks)**  
 ```sh
-python fileremover.py --info payload --hash sha1
+python fileslayer.py --info payload --hash sha1
 ```
 
 ### **5. Clean a directory with logging & backups**  
 ```sh
-python fileremover.py -d /tmp/ctf_challenge -b -v -l ctf_clean.log
+python fileslayer.py -d /tmp/ctf_challenge -b -v -l ctf_clean.log
 ```
 
 ---
@@ -102,4 +102,7 @@ Try it out in a **test directory first** before running it on important files! ð
 
 --- 
 
-[^1]: 
+[^1]:  
+```
+
+By Solomon Tesfaye (CEH)
