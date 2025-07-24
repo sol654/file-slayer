@@ -36,16 +36,16 @@ python fileremover.py [OPTIONS]
 
 ### **🔹 Common Commands**  
 
-| Command | Description |
-|---------|-------------|
-| `python fileremover.py` | Cleans the current directory (keeps script & backup folder) |
-| `python fileremover.py -d /path/to/dir` | Cleans a specific directory |
-| `python fileremover.py -e file1 dir1` | Excludes `file1` and `dir1` from deletion |
-| `python fileremover.py -fp "*.tmp" "*.log"` | Deletes only files matching these patterns |
-| `python fileremover.py -dp "temp_*"` | Deletes only folders matching the pattern |
-| `python fileremover.py --info target.txt` | Shows metadata for `target.txt` |
-| `python fileremover.py --info file.exe --hash sha256` | Computes SHA256 hash of `file.exe` |
-| `python fileremover.py -b -v -l log.txt` | Enables **backup**, **verbose logs**, and saves logs to `log.txt` |
+| Command                                               | Description                                                       |
+| ----------------------------------------------------- | ----------------------------------------------------------------- |
+| `python fileremover.py`                               | Cleans the current directory (keeps script & backup folder)       |
+| `python fileremover.py -d /path/to/dir`               | Cleans a specific directory                                       |
+| `python fileremover.py -e file1 dir1`                 | Excludes `file1` and `dir1` from deletion                         |
+| `python fileremover.py -fp "*.tmp" "*.log"`           | Deletes only files matching these patterns                        |
+| `python fileremover.py -dp "temp_*"`                  | Deletes only folders matching the pattern                         |
+| `python fileremover.py --info target.txt`             | Shows metadata for `target.txt`                                   |
+| `python fileremover.py --info file.exe --hash sha256` | Computes SHA256 hash of `file.exe`                                |
+| `python fileremover.py -b -v -l log.txt`              | Enables **backup**, **verbose logs**, and saves logs to `log.txt` |
 
 ---
 
